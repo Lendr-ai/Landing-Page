@@ -2,8 +2,8 @@ import "./App.css";
 import Navbar from "./components/Navbar";
 import { Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
-import Funding from "./pages/Funding";
-import WaitList from "./pages/WaitList";
+import Suppliers from "./pages/Suppliers";
+import Businesses from "./pages/Businesses";
 
 function App() {
   return (
@@ -11,8 +11,8 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/get-funded" element={<Funding />} />
-        <Route path="/waitlist" element={<WaitList />} />
+        <Route path="/suppliers" element={<Suppliers />} />
+        <Route path="/businesses" element={<Businesses />} />
       </Routes>
     </div>
   );

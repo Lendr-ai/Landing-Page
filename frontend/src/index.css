@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+button {
+  @apply bg-cta px-4 py-2 rounded-xl border border-cta text-white hover:text-cta hover:bg-white hover:border hover:border-cta;
+}
