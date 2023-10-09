@@ -8,7 +8,9 @@ import Businesses from "./pages/Businesses";
 function App() {
   return (
     <div>
-      <Navbar />
+      <div className="shadow-lg">
+        <Navbar />
+      </div>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/suppliers" element={<Suppliers />} />
