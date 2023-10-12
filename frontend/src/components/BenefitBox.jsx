@@ -11,9 +11,9 @@ const BenefitBox = (props) => {
       </div>
       <p className="text-fontsecondary text-sm">{props.content}</p>
       <div className="flex justify-start w-full">
-        <a className="text-sm text-cta font-bold cursor-pointer hover:text-gray-600 transition duration-100">
+        <button className="text-sm text-white font-bold cursor-pointer bg-cta border border-cta hover:bg-bgsecondary hover:text-cta transition duration-100">
           {props.cta}
-        </a>
+        </button>
       </div>
     </div>
   );
