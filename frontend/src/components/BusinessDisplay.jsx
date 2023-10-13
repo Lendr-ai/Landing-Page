@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 const BusinessDisplay = () => {
   const [paymentTerm, setPaymentTerm] = useState(3);
@@ -88,14 +89,19 @@ const BusinessDisplay = () => {
             <h5 className="text-black text-xl">{paymentTerm} Months</h5>
           </div>
         </form>
-        <div className="w-full lg:w-1/2 text-md xl:text-lg">
-          Let’s break this up into even monthly payments of{" "}
-          <span className="font-bold text-lg xl:text-2xl">
-            ${monthlyAmount.toLocaleString()}
-          </span>{" "}
-          over{" "}
-          <span className="font-bold text-lg xl:text-2xl">{paymentTerm}</span>{" "}
-          months to help take control of your cash flow.
+        <div className="flex flex-col gap-8 justify-center items-start">
+          <div className="w-full text-md xl:text-lg">
+            Let’s break this up into even monthly payments of{" "}
+            <span className="font-bold text-lg xl:text-2xl">
+              ${monthlyAmount.toLocaleString()}
+            </span>{" "}
+            over{" "}
+            <span className="font-bold text-lg xl:text-2xl">{paymentTerm}</span>{" "}
+            months to help take control of your cash flow.
+          </div>
+          <button className="w-fit bg-cta border border-cta text-white font-bold hover:text-cta hover:bg-white transition duration-300">
+            <Link to="/suppliers">Improve your cashflow</Link>
+          </button>
         </div>
       </div>
     </div>

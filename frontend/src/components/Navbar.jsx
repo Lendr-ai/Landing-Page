@@ -3,6 +3,8 @@ import Logo from "../assets/Logo.svg";
 import { LuMenu } from "react-icons/lu";
 import { AiOutlineClose } from "react-icons/ai";
 import { Link } from "react-router-dom";
+import { BsFacebook, BsTwitter } from "react-icons/bs";
+import { AiFillInstagram, AiFillCopyrightCircle } from "react-icons/ai";
 
 const Navbar = () => {
   const [showNav, setShowNav] = useState(false);
@@ -16,8 +18,8 @@ const Navbar = () => {
       <div
         className={
           showNav
-            ? "h-full fixed top-0 w-5/6 right-0 justify-center items-center md:h-auto md:flex md:static md:w-auto transition-right duration-300 bg-white"
-            : "h-full fixed top-0 w-5/6 -right-full justify-center items-center md:h-auto md:flex md:static md:w-auto transition-right duration-300 bg-white"
+            ? "h-full fixed top-0 w-5/6 right-0 justify-center items-center md:h-auto md:flex md:static md:w-auto transition-right duration-300 bg-white z-10 shadow-2xl"
+            : "h-full fixed top-0 w-5/6 -right-full justify-center items-center md:h-auto md:flex md:static md:w-auto transition-right duration-300 bg-white z-10 shadow-2xl"
         }
       >
         <div
@@ -28,7 +30,7 @@ const Navbar = () => {
             <AiOutlineClose className="text-2xl text-cta" />
           </div>
         </div>
-        <ul className="flex flex-col justify-center text-center gap-8 h-full md:flex-row">
+        <ul className="flex flex-col justify-center text-center gap-8 h-full md:flex-row relative z-10">
           <li>
             <Link
               to="/suppliers"
@@ -47,6 +49,11 @@ const Navbar = () => {
               Businesses
             </Link>
           </li>
+          <div className="flex gap-8 md:hidden justify-center items-center mt-20">
+            <BsFacebook className="text-cta text-2xl cursor-pointer hover:text-gray-400 transition duration-100" />
+            <BsTwitter className="text-cta text-2xl cursor-pointer hover:text-gray-400 transition duration-100" />
+            <AiFillInstagram className="text-cta text-2xl cursor-pointer hover:text-gray-400 transition duration-100" />
+          </div>
         </ul>
       </div>
       <div className="bg-gray-100 p-2 rounded-2xl md:hidden">
