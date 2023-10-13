@@ -10,6 +10,8 @@ export default {
         fontprimary: "#0a2540",
         fontsecondary: "#74807e",
         bgsecondary: "#f6f9fc",
+        bgcode: "#0a2540",
+        bgcodebutton: "#0de4e4",
       },
     },
   },
