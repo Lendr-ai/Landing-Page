@@ -9,7 +9,7 @@ const Benefits = () => {
     <div>
       <div className="flex flex-col gap-2">
         <span className="text-xl text-ctasecondary w-fit rounded-2xl">
-          Exceeding expectations
+          Going above and beyond
         </span>
         <h3 className="mb-8 font-bold">Bring your vision to life with us</h3>
       </div>

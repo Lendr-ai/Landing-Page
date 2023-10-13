@@ -25,7 +25,12 @@ const BusinessDisplay = () => {
 
   return (
     <div>
-      <h3 className="mb-12">Test it for yourself</h3>
+      <div className="flex flex-col gap-2">
+        <span className="text-xl text-ctasecondary w-fit rounded-2xl">
+          Simple but effective
+        </span>
+        <h3 className="mb-12">Test it for yourself</h3>
+      </div>
       <div className="flex flex-col lg:flex-row gap-8 justify-center items-center">
         <form className="w-full lg:w-1/2 p-8 rounded-2xl flex flex-col gap-8 shadow-2xl">
           <div className="flex flex-col">

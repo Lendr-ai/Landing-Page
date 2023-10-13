@@ -4,7 +4,12 @@ import BusinessMainCard from "./BusinessMainCard";
 const BusinessMain = () => {
   return (
     <div>
-      <h3 className="mb-12">How does Lendr work?</h3>
+      <div className="flex flex-col gap-2">
+        <span className="text-xl text-ctasecondary w-fit rounded-2xl">
+          How does Lendr work
+        </span>
+        <h3 className="mb-12">Sign up and pay later</h3>
+      </div>
       <div className="flex flex-col xl:flex-row gap-4 justify-center items-start relative">
         <div className="absolute bg-white left-6 xl:left-0 xl:top-6 h-full w-1 xl:h-1 xl:w-full rounded-2xl"></div>
         <div className="flex flex-row xl:flex-col max-w-lg gap-2 xl:gap-8 w-full xl:w-1/3">

@@ -1,6 +1,7 @@
 import React from "react";
 import { BsFacebook, BsTwitter } from "react-icons/bs";
 import { AiFillInstagram, AiFillCopyrightCircle } from "react-icons/ai";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -13,7 +14,7 @@ const Footer = () => {
       <div className="flex gap-2 justify-center items-center mt-8">
         <AiFillCopyrightCircle className="text-cta text-2xl" />
         <h3 className="cursor-pointer hover:text-gray-400 transition duration-100">
-          Lendr
+          <Link to="/">Lendr</Link>
         </h3>
       </div>
       <div className="flex gap-4">
