@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
 h1 {
   @apply text-4xl font-extrabold lg:text-6xl text-cta;
 }

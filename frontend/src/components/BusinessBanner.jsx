@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import businessbanner from "../assets/businessbanner.jpg";
 
 const BusinessBanner = () => {
@@ -16,7 +17,7 @@ const BusinessBanner = () => {
         </h5>
         <div className="flex flex-col gap-2 md:items-center md:flex-row">
           <button className="w-40 bg-cta border border-cta text-white font-bold hover:text-cta hover:bg-white transition duration-300">
-            Start Now
+            <Link to="/suppliers">Start Now</Link>
           </button>
         </div>
       </div>

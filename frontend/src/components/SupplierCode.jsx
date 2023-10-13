@@ -20,7 +20,7 @@ const SupplierCode = () => {
               started, and easy to iterate.
             </p>
             <button className="w-fit bg-cta border border-cta text-white font-bold hover:text-cta hover:bg-white transition duration-300">
-              Explore the docs
+              <a href="#onboard">Explore the docs</a>
             </button>
           </div>
         </div>

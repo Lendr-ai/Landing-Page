@@ -13,7 +13,7 @@ const SupplierForm = () => {
           platform.
         </p>
       </div>
-      <form className="flex flex-col gap-4">
+      <form className="flex flex-col gap-4" id="onboard">
         <div className="flex flex-col lg:flex-row gap-4 lg:gap-8">
           <div className="flex flex-col gap-1 w-full">
             <label for="first" className="text-fontsecondary">

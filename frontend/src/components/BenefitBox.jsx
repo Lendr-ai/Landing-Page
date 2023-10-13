@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const BenefitBox = (props) => {
   return (
@@ -12,7 +13,7 @@ const BenefitBox = (props) => {
       <p className="text-fontsecondary text-sm">{props.content}</p>
       <div className="flex justify-start w-full">
         <button className="text-sm text-white font-bold cursor-pointer bg-cta border border-cta hover:bg-bgsecondary hover:text-cta transition duration-100">
-          {props.cta}
+          <Link to="/suppliers">{props.cta}</Link>
         </button>
       </div>
     </div>

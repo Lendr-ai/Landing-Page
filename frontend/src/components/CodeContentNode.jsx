@@ -3,9 +3,9 @@ import SyntaxHighlighter from "react-syntax-highlighter";
 import { vs2015 } from "react-syntax-highlighter/dist/esm/styles/hljs";
 
 const CodeContentNode = (props) => {
-  const nodeString = `const stripe = require('stripe')('sk_test_4eC39HqLyjWDarjtT1zdp7dc');
+  const nodeString = `const lendr = require('lendr')('sk_test_4eC39HqLyjWDarjtT1zdp7dc');
 
-const session = await stripe.checkout.sessions.create({
+const session = await lendr.checkout.sessions.create({
     payment_method_types: ['card'],
     line_items: [{
         price: 'price_1HKiSf2eZvKYlo2CxjF9qwbr',
@@ -16,9 +16,9 @@ const session = await stripe.checkout.sessions.create({
     cancel_url: 'https://example.com/cancel',
 });`;
 
-  const rubyString = `Stripe.api_key = 'sk_test_4eC39HqLyjWDarjtT1zdp7dc'
+  const rubyString = `lendr.api_key = 'sk_test_4eC39HqLyjWDarjtT1zdp7dc'
 
-session = Stripe::Checkout::Session.create(
+session = lendr::Checkout::Session.create(
     payment_method_types: ['card'],
     line_items: [{
     price: 'price_1HKiSf2eZvKYlo2CxjF9qwbr',
@@ -29,9 +29,9 @@ session = Stripe::Checkout::Session.create(
     cancel_url: 'https://example.com/cancel',
 )`;
 
-  const pythonString = `stripe.api_key = 'sk_test_4eC39HqLyjWDarjtT1zdp7dc'
+  const pythonString = `lendr.api_key = 'sk_test_4eC39HqLyjWDarjtT1zdp7dc'
 
-session = stripe.checkout.Session.create(
+session = lendr.checkout.Session.create(
     payment_method_types=['card'],
     line_items=[{
     'price': 'price_1HKiSf2eZvKYlo2CxjF9qwbr',
@@ -42,9 +42,9 @@ session = stripe.checkout.Session.create(
     cancel_url='https://example.com/cancel',
 )`;
 
-  const phpString = `\Stripe\Stripe::setApiKey('sk_test_4eC39HqLyjWDarjtT1zdp7dc');
+  const phpString = `\lendr\lendr::setApiKey('sk_test_4eC39HqLyjWDarjtT1zdp7dc');
 
-$session = \Stripe\Checkout\Session::create([
+$session = \lendr\Checkout\Session::create([
     'payment_method_types' => ['card'],
     'line_items' => [[
     'price' => 'price_1HKiSf2eZvKYlo2CxjF9qwbr',
@@ -55,7 +55,7 @@ $session = \Stripe\Checkout\Session::create([
     'cancel_url' => 'https://example.com/cancel',
 ]);`;
 
-  const javaString = `Stripe.apiKey = 'sk_test_4eC39HqLyjWDarjtT1zdp7dc';
+  const javaString = `lendr.apiKey = 'sk_test_4eC39HqLyjWDarjtT1zdp7dc';
 
 SessionCreateParams params =
     SessionCreateParams.builder()
@@ -72,26 +72,26 @@ SessionCreateParams params =
 
 Session session = Session.create(params);`;
 
-  const goString = `stripe.Key = 'sk_test_4eC39HqLyjWDarjtT1zdp7dc'
+  const goString = `lendr.Key = 'sk_test_4eC39HqLyjWDarjtT1zdp7dc'
 
-params := &stripe.CheckoutSessionParams{
-    PaymentMethodTypes: stripe.StringSlice([]string{
+params := &lendr.CheckoutSessionParams{
+    PaymentMethodTypes: lendr.StringSlice([]string{
         'card',
     }),
-    LineItems: []*stripe.CheckoutSessionLineItemParams{
-        &stripe.CheckoutSessionLineItemParams{
-            Price: stripe.String('price_1HKiSf2eZvKYlo2CxjF9qwbr'),
-            Quantity: stripe.Int64(1),
+    LineItems: []*lendr.CheckoutSessionLineItemParams{
+        &lendr.CheckoutSessionLineItemParams{
+            Price: lendr.String('price_1HKiSf2eZvKYlo2CxjF9qwbr'),
+            Quantity: lendr.Int64(1),
         },
     },
-    Mode: stripe.String('subscription'),
-    SuccessURL: stripe.String('https://example.com/success?session_id={CHECKOUT_SESSION_ID}'),
-    CancelURL: stripe.String('https://example.com/cancel'),
+    Mode: lendr.String('subscription'),
+    SuccessURL: lendr.String('https://example.com/success?session_id={CHECKOUT_SESSION_ID}'),
+    CancelURL: lendr.String('https://example.com/cancel'),
 }
 
 session, err := session.New(params)`;
 
-  const dotnetString = `StripeConfiguration.ApiKey = 'sk_test_4eC39HqLyjWDarjtT1zdp7dc';
+  const dotnetString = `lendrConfiguration.ApiKey = 'sk_test_4eC39HqLyjWDarjtT1zdp7dc';
 
 var options = new SessionCreateOptions {
     PaymentMethodTypes = new List<string> {

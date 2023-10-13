@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useRef } from "react";
 import ImageBox from "../components/ImageBox";
+import { Link } from "react-router-dom";
 
 const Banner = () => {
   return (
@@ -15,7 +16,7 @@ const Banner = () => {
         </h5>
         <div className="flex flex-col gap-2 md:items-center md:flex-row">
           <button className="w-40 bg-cta border border-cta text-white font-bold hover:text-cta hover:bg-white transition duration-300">
-            Get Paid Faster
+            <Link to="/suppliers">Get Paid Faster</Link>
           </button>
           <p className="text-cta text-sm font-bold">
             Trusted by thousands of businesses in Australia

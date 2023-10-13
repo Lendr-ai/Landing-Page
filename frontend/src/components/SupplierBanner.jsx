@@ -1,5 +1,6 @@
 import React from "react";
 import supplierbanner from "../assets/supplierbanner.jpg";
+import { Link } from "react-router-dom";
 
 const SupplierBanner = () => {
   return (
@@ -11,8 +12,8 @@ const SupplierBanner = () => {
           over 12 months, eliminating payment delays and defaults.
         </h5>
         <div className="flex flex-col gap-2 md:items-center md:flex-row">
-          <button className="w-40 bg-cta border border-cta text-white font-bold hover:text-cta hover:bg-white transition duration-300">
-            Get Paid Faster
+          <button className="w-fit bg-cta border border-cta text-white font-bold hover:text-cta hover:bg-white transition duration-300">
+            <a href="#onboard">Schedule a demo</a>
           </button>
         </div>
       </div>
